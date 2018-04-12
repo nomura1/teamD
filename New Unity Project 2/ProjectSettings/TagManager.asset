@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - head
+  - left hand
+  - right hand
+  - left ankle
+  - right ankle
+  - blueball
+  - redball
+  - greenball
   layers:
   - Default
   - TransparentFX
