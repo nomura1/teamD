@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Fallinchecker : MonoBehaviour {
     public hole red;
-    public hole blue;
-    public hole green;
+  //  public hole blue;
+   // public hole green;
 
 	void OnGUI () {
         string label = " ";
@@ -12,7 +12,9 @@ public class Fallinchecker : MonoBehaviour {
 
         if (red.IsFallIn() )//&& blue.IsFallIn() && green.IsFallIn())
         {
-            label = "Fall in Hole!111111111111111111111111111111111111111111111111111111111111111111111111111111!";
+            label = "!!!!!!!!";
+        }else {
+            label = "????";
         }
         GUI.Label(new Rect(0, 0, 100, 30), label);
 	}

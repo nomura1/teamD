@@ -5,13 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - head
-  - left hand
-  - right hand
-  - left ankle
-  - right ankle
-  - blueball
-  - redball
-  - greenball
+  - righthand
+  - lefthand
   layers:
   - Default
   - TransparentFX
