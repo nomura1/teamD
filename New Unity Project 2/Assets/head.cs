@@ -5,6 +5,12 @@ using UnityEngine;
 public class head : MonoBehaviour
 
 {
+    public static bool headflag;
+
+    void Start () {
+        headflag = false;
+
+    }
 
     // Use this for initialization
     void OnTriggerStay(Collider other)
@@ -12,8 +18,15 @@ public class head : MonoBehaviour
 
         if (other.gameObject.tag == "head")
         {
-            Destroy(other.gameObject);
+            headflag = true;
+           
 
         }
+    }
+    void OnTriggerExit(Collider other) {
+        if (other.gameObject.tag == "head") {
+            headflag = false;
+        }
+
     }
 }

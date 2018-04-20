@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class lefthand : MonoBehaviour
 {
+    public static bool lefthandflag;
 
+    void Start() {
+        lefthandflag = false;
+    }
 
     // Use this for initialization
     void OnTriggerStay(Collider other)
@@ -12,8 +16,16 @@ public class lefthand : MonoBehaviour
 
         if (other.gameObject.tag == "lefthand")
         {
-            Destroy(other.gameObject);
+           lefthandflag=true;
 
         }
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "lefthand")
+        {
+            lefthandflag = false;
+        }
+
     }
 }
